@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import 'mixins';
+
+/*** MIXINS USAGE ***
+
+	@include font-face("fontName", "../fonts/fontPath/fontName", normal); 
+
+	@include xs(12);
+	@include sm(12);
+	@include md(12);
+	@include lg(12);
+
+	@include r(768);
+	@include rmin(768);
+
+	@include trans / trans($what $dur $easing);
+	@include cover;
+
+	@include centerX / centerXa
+	@include centerY / centerYa
+
+	@include overlay($opacity)
+***/
+
+body {
+	background: #EEF9F9;
+}
+
+.icon {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	font-size: 30px;
+}
+
+svg {
+	margin-top: 80px;
+	g:not(#outlines) {
+		transition: all .3s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.05);
+			path {		
+				fill: #CDDD95;				
+			}	
+			.line {
+				fill: #8DA80D;
+			}
+		}
+	}
+	path {
+		transform-origin: 50% 50%;
+		transition: all .3s ease-in-out;
+	}
+}
+
+.line {
+	fill: none;
+	transition: all .3s ease-in-out;
+}
+
+#KS { transform-origin: 44% 55%; } 
+#OK { transform-origin: 50% 65%; }
+#TX { transform-origin: 39% 89%; }
+#NM { transform-origin: 30% 72%; }
+#AZ { transform-origin: 19% 72%; }
+#CA { transform-origin: 2% 60%; }
+#NV { transform-origin: 14% 40%; }
+#UT { transform-origin: 20% 51%; }
+#OR { transform-origin: 2% 29%; }
+#WA { transform-origin: 13% 10%; }
+#CO { transform-origin: 35% 51%; }
+#ID { transform-origin: 19% 32%; }
+#WY { transform-origin: 28% 45%; }
+#MT { transform-origin: 25% 20%; }
+#NE { transform-origin: 42% 47%; }
+#SD { transform-origin: 45% 29%; }
+#ND { transform-origin: 42% 25%; }
+#AR { transform-origin: 57% 68%; }
+#LA { transform-origin: 56% 85%; }
+#MO { transform-origin: 57% 58%; }
+#IA { transform-origin: 54% 37%; } 
+#MN { transform-origin: 52% 28%; }
+#MS { transform-origin: 61% 73%; }
+#AL { transform-origin: 67% 73%; }
+#FL { transform-origin: 80% 87%; }
+#GA { transform-origin: 76% 78%; }
+#SC { transform-origin: 80% 71%; }
+#NC { transform-origin: 85% 59%; }
+#TN { transform-origin: 65% 65%; }
+#MI { transform-origin: 65% 30%; }
+#WI { transform-origin: 61% 33%; }
+#IL { transform-origin: 61% 45%; }
+#KY { transform-origin: 70% 55%; }
+#IN { transform-origin: 68% 45%; }
+#OH { transform-origin: 73% 45%; }
+#WV { transform-origin: 76% 55%; }
+#VA { transform-origin: 80% 58%; }
+
+html, body {
+	height: 100%;
+}
+
+section {
+	height: 100%;
+	background: #016af7;
+	svg {
+		filter:url('#goo');
+	}
+	path {
+		fill: #ff1901;
+	}
+}
