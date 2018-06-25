@@ -25,6 +25,8 @@
 
 body {
 	background: #EEF9F9;
+	font-family: 'Roboto', sans-serif;
+	color: #333;
 }
 
 .icon {
@@ -97,6 +99,17 @@ svg {
 #OH { transform-origin: 73% 45%; }
 #WV { transform-origin: 76% 55%; }
 #VA { transform-origin: 80% 58%; }
+#MD { transform-origin: 83% 46%; }
+#DE { transform-origin: 87% 44%; }
+#NJ { transform-origin: 87% 46%; }
+#PA { transform-origin: 83% 46%; }
+#NY { transform-origin: 84% 32%; }
+#CT { transform-origin: 89% 34%; }
+#RI { transform-origin: 92% 36%; }
+#MA { transform-origin: 92% 30%; }
+#VT { transform-origin: 88% 27%; }
+#NH { transform-origin: 91% 29%; }
+#ME { transform-origin: 92% 22%; }
 
 html, body {
 	height: 100%;
