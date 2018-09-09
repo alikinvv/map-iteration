@@ -7,6 +7,8 @@ $(document).ready(function(){
         moveUp($(this));
     });
 
+
+
     $('.start .btn').click(function()  {
         anime({
             targets: '.overlay',

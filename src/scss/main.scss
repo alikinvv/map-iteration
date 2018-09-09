@@ -55,7 +55,7 @@ body {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	transition: all linear 600ms;
+	transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 800ms;
 
 	&.show {
 		margin-top: 40px;
@@ -173,5 +173,45 @@ html, body {
 		font-weight: 900;
 		font-size: 34px;
 		margin-top: 0;
+	}
+}
+
+.header {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	z-index: 6;
+
+	.logo {		
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		svg {
+			width: 40px;
+			margin-right: 20px;
+		}
+
+		span {
+			font-weight: 900;
+		}
+
+		&::before {
+			content: '';
+			width: 55px;
+			height: 55px;
+			position: absolute;
+			top: 20px;
+			left: 19px;
+			transform: translate(-50%, -50%);
+			background: #7ccdd1;
+			border-radius: 50%;
+			z-index: -1;
+		}
 	}
 }
